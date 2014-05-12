@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+  <h3>Documents have been updated on your work order '<%= @work_order.task_title %>'</h3>
+  <p>
+    <% if @changes %>
+    We wanted to let you know that the following documents attached to this work order have been updated:
+    <ul>
+      <% @changes.each do |doc| %>
+      <li><%= doc %></li>
+      <% end %>
+    </ul>
+    <% else %>
+    We wanted to let you know that one or more documents attached to this work order have been updated or removed.
+    <% end %>
+  </p>
+  Jump to the work order now - <br>
+  <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3></a>
+  <p>
+    Your feedback is always welcome.
+    <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
+  </p>
+  <p>
+    Sincerely,
+  </p>
+  <p>
+    <em><%= site_signature %></em>
+  </p>
+</p>
+</body>
+</html>

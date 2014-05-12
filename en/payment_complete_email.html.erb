@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+    <h3>Payment has been made for '<%= @work_order.task_title %>'</h3>
+    <p>
+        At this stage, your work order has been completed. We hope that everything went smoothly and
+        expect that <b><%= @work_order.task_owner_name %></b> is very happy with your work.
+    </p>
+    <p>
+        When you're ready, hop back on <%= site_name %> and <a href="<%= notifications_url %>/#/tasks/search">Search for your next Project</a>
+    </p>
+    <p>
+        Your feedback is always welcome.
+        <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
+    </p>
+    <p>
+    Sincerely,
+  </p>
+  <p>
+    <em><%= site_signature %></em>
+  </p>
+</body>
+</html>

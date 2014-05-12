@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+  <h3><%= @bid.task_owner_name %> updated the task '<%= @bid.task_title %>'</h3>
+  <p>
+    Hi <b><%= @bid.owner_name %></b>,
+  </p>
+  <p>
+    <%= @bid.task_owner_name %> has just updated a Project which you have been following on <%= site_name %>. We suggest you <a href="<%= notifications_url %>/#/tasks/<%= @bid.task_id %>">review this Project</a>. If you have questions or comments about the changes, you can post them in the 'Questions & Comments' section of the Project. We'll alert the Project owner with your comments right away.
+  </p>
+  <p>
+    Here's a link to that Project again:
+    <b><a href="<%= notifications_url %>/#/tasks/<%= @bid.task_id %>"><%= @bid.task_title %></a></b>
+  </p>
+  <p>
+    Your feedback is always welcome.
+    <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time.
+  </p>
+  <p>
+    Sincerely,
+  </p>
+  <p>
+    <em><%= site_signature %></em>
+  </p>
+</body>
+</html>

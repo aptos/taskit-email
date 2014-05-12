@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+  <h2>Welcome to <%= site_name %>!</h2>
+  <p>
+    Hello <b><%= @user.name %></b>,
+  </p>
+  <p>
+    Thanks for joining Juniper's Professional Services Marketplace. This is the best place to find and engage qualified and certified Juniper Professional Services Specialists.
+  </p>
+  <p>
+    These elite solution providers have extensive experience implementing Juniper Networks products and solutions, and have gone through a formal qualification and vetting process.
+  </p>
+  <p>
+    Professional Services Specialists are online and eager to support your needs, and the marketplace makes it very easy to engage with the providers of your choice based on your unique requirements and circumstances.
+  </p>
+  <p>
+    Here are a few tips to help you get started:
+  </p>
+  <ul>
+    <li>If you are looking for a Professional Services Specialist, you can start by <a href="<%= notifications_url %>/#/companies">Browsing our Provider Directory</a></li>
+    <li>If you have a project ready to share with your Preferred Providers, simply <a href="<%= notifications_url %>/#/tasks/new">Create a new Project</a></li>
+    <li>If you're an authorized Professional Services Specialist, you can also <a href="<%= notifications_url %>/#/tasks/search">Search for Projects</a> to find new customers and opportunities today</li>
+  </ul>
+  <p>
+    We love to hear from our user community, so please feel free to <a href="mailto:<%= feedback_mailto %>">drop us a line any time!</a>
+  </p>
+  <p>
+    Sincerely,
+  </p>
+  <p>
+    <em><%= site_signature %></em>
+  </p>
+</body>
+</html>

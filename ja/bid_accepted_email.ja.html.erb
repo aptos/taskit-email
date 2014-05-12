@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h3>Your bid was accepted!</h3>
+    <p>
+    <p>Congratulations <b><%= @setting.name %></b>, your bid for: '<%= @work_order.task_title %>' has been accepted!</p>
+    <p>
+        A Work Order has been created to track progress on this task. You can
+        <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">jump to it now</a>.
+        <p>
+    	Here are some next steps:
+    	<ul>
+    		<li>
+                Review all of the information and attachments for the task - They've been linked to the work order for quick access.
+            </li>
+            <li>
+                Get in touch with the Project Owner, <b><%= @work_order.task_owner_name %></b> through the contact information that's been linked to the work order.
+            </li>
+            <li>
+                Update the estimated completion date. You can go back and modify that information any time to keep the Project Owner up to date on your progress.
+            </li>
+            <li>
+                Once the Project is complete, check off 'Work Completed'. The Project Owner will be notified that they should accept your awesome work and start the payment process.
+            </li>
+            <li>
+                Hop back on <%= site_name %> and <a href="<%= notifications_url %>/#/tasks/search">Search for your next Project</a>
+            </li>
+    	</ul>
+    <p>
+        Here's that link to your work order again: <br>
+        <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3></a>
+
+        <p>
+    	Your feedback is always welcome.
+    	<a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
+    <p>
+    Sincerely,
+  </p>
+  <p>
+    <em><%= site_signature %></em>
+  </p>
+  </body>
+</html>

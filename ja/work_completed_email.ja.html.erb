@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+    <h3>Work has been completed on '<%= @work_order.task_title %>'</h3>
+    <p>
+        A Work Order has been created to track progress on this task. You can
+        <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">jump to it now</a>.
+    </p>
+    <p>
+        At this stage, your next steps should be:
+        <ul>
+          <li>
+            Accept the work by clicking on the 'work accepted' tick-box on your work order.
+        </li>
+        <li>
+            Rate and Review the work done by <b><%= @work_order.bid_owner_name %></b>.
+        </li>
+        <li>
+            Proceed with payment. To do this, open your work order and click 'Pay'.
+            You can choose to pay immediately via credit card or we can send you an invoice
+            which you can pay via electronic transfer of funds directly to TaskIT.
+            We'll let <b><%= @work_order.bid_owner_name %></b> know that payments are
+            being process once you've made your selection.
+        </ul>
+    </p>
+    Here's that link to your work order again: <br>
+    <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3></a>
+    <p>
+        Your feedback is always welcome.
+        <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
+    </p>
+    <p>
+    Sincerely,
+  </p>
+  <p>
+    <em><%= site_signature %></em>
+  </p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+  <h3><%= @bid.owner_name %> has Bid on '<%= @bid.task_title %>'</h3>
+  <p>
+    Hi <b><%= @bid.task_owner_name %></b>
+  </p>
+  <p>
+    <%= @bid.owner_name %> has bid on your task.
+    Please take some time to <a href="<%= notifications_url %>/#/bids/<%= @bid.id %>">Review your bid now</a>. You can accept the bid straight away, or use the 'Comments' area to ask a question.
+  </p>
+  <p>
+    You can check out <a href="<%= notifications_url %>/#/profile/<%= @bid.owner %>"><%= @bid.owner_name %>'s Profile</a> for ratings, reviews, common contacts and other information.
+  </p>
+  <p>
+    Your feedback is always welcome.
+    <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time.
+  </p>
+  <p>
+    Sincerely,
+  </p>
+  <p>
+    <em><%= site_signature %></em>
+  </p>
+</body>
+</html>

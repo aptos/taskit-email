@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+    <h3>Work has been accepted for '<%= @work_order.task_title %>'</h3>
+    <p>
+        At this stage, we've asked <b><%= @work_order.task_owner_name %></b> to write a review for you and proceed with payment.
+        Here's a link to your work order: <br>
+        <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3></a>
+    </p>
+    <p>
+       Your feedback is always welcome.
+       <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
+   </p>
+   <p>
+    Sincerely,
+  </p>
+  <p>
+    <em><%= site_signature %></em>
+  </p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+  <h3>Update from <%= site_name  %></h3>
+  <p>
+    Hi <b><%= @message['to_name'] %></b>,<p />
+    We thought you'd like to know that <b><%= @message['author_name'] %></b> left the following comment on <a href="<%= @link %>"><%= @message['title'] %></a>:
+  </p>
+
+  <br />
+  <p>
+    <b><i>"<%= @details.html_safe %>"</i></b>
+  </p>
+  <hr>
+  <p>
+    You can reply via email now, or open <a href="<%= @link %>"><%= @message['title'] %></a> and reply in the Questions and Comments area. Your reply will then be emailed to <%= @message['author_name'] %>.
+  </p>
+  <p>
+   Your feedback is always welcome.
+   <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
+  </p>
+  <p>
+    Sincerely,
+  </p>
+  <p>
+    <em><%= site_signature %></em>
+  </p>
+  <% if @message['token'] %>
+    <span style="color:#999999; background-color:#F5F5F5; border: 1px solid #e5e5e5; padding: 0 8px;">[taskit-token=<%= @message['token'] %>] please include this line in your reply</span>
+  <% end %>
+</body>
+</html>
