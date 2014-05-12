@@ -2,11 +2,13 @@
 
 ## Instructions for Translators
 
-English versions of each template are found in the en folder. Each additional language has copies within the language folder.
+English versions of each template are found in the 'en' folder. These are the 'originals' for reference and should not be edited. Each additional language has copies within the language folder. Those are the files that should be edited. Here's the current list of languages:
 
 * Japanese: 'ja'
 
 ### Steps to Edit Templates
+
+We are going to use the editor built in to github for our purposes. This is an online editor that allows us to instantly share updates. There is no software to download.
 
 * Navigate to the file which you would like to edit by clicking the language folder, then the filename.
 * Select 'Edit' from the tab menu displayed at the top of the file. The file should change to white text on a black background.
