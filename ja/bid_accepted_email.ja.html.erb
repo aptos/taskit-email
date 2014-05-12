@@ -23,21 +23,21 @@
                 必要であれば、予想完了日などの情報を更新してください。日程などの情報を頻繁に更新することにより、プロジェクトオーナーに最新の情報を常に伝達されることをお勧めします。
             </li>
             <li>
-                Once the Project is complete, check off 'Work Completed'. The Project Owner will be notified that they should accept your awesome work and start the payment process.
+                •	プロジェクトのすべての作業が完了次第、「作業完了」の項目にチェックマークを入れてください。プロジェクトオーナーに作業完了の通知が送信され、支払いのプロセスが開始されます。
             </li>
             <li>
-                Hop back on <%= site_name %> and <a href="<%= notifications_url %>/#/tasks/search">Search for your next Project</a>
+                上記の過程に慣れたら、<%= site_name %>にアクセスして、<a href="<%= notifications_url %>/#/tasks/search">あなたの次のプロジェクトを探すことができます。</a>
             </li>
     	</ul>
     <p>
-        Here's that link to your work order again: <br>
+        あなたのワークオーダーのページにアクセスするには次のリンクをクリックしてください。<br>
         <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3></a>
 
         <p>
-    	Your feedback is always welcome.
-    	<a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
+    	ご質問等ございましたら、お気軽に
+    	<a href="mailto:<%= @feedback_mailto %>">弊社サポートセンター</a>までご連絡ください。
     <p>
-    Sincerely,
+    弊社サービスをご利用いただき、誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
