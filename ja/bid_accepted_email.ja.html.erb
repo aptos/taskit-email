@@ -8,19 +8,19 @@
     <p>
     <p><b><%= @setting.name %></b>さま、おめでとうございます。あなたの「<%= @work_order.task_title %>」への入札は受諾されました。</p>
     <p>
-        A Work Order has been created to track progress on this task. You can
-        <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">jump to it now</a>.
+        あなたの作業進行の記録のために新規ワークオーダーが作成されました。ここにクリックして
+        <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">ワークオーダーのページにアクセスすることができます。</a>.
         <p>
-    	Here are some next steps:
+    	下記を参考にして次のステップに進んでください。
     	<ul>
     		<li>
-                Review all of the information and attachments for the task - They've been linked to the work order for quick access.
+                ワークオーダーのページにあるリンクを利用して、プロジェクトの詳細や添付ファイルを参照してください。
             </li>
             <li>
-                Get in touch with the Project Owner, <b><%= @work_order.task_owner_name %></b> through the contact information that's been linked to the work order.
+                ワークオーダーのページにあるプロジェクトオーナーの<b><%= @work_order.task_owner_name %></b>さまと連絡をとり、最新の情報を確認してください。
             </li>
             <li>
-                Update the estimated completion date. You can go back and modify that information any time to keep the Project Owner up to date on your progress.
+                必要であれば、予想完了日などの情報を更新してください。日程などの情報を頻繁に更新することにより、プロジェクトオーナーに最新の情報を常に伝達されることをお勧めします。
             </li>
             <li>
                 Once the Project is complete, check off 'Work Completed'. The Project Owner will be notified that they should accept your awesome work and start the payment process.
