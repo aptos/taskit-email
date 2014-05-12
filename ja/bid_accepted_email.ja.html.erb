@@ -4,9 +4,9 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
-    <h3>Your bid was accepted!</h3>
+    <h3>あなたの入札が受け入れられました。</h3>
     <p>
-    <p>Congratulations <b><%= @setting.name %></b>, your bid for: '<%= @work_order.task_title %>' has been accepted!</p>
+    <p><b><%= @setting.name %></b>さま、おめでとうございます。あなたの「<%= @work_order.task_title %>」への入札は受諾されました。</p>
     <p>
         A Work Order has been created to track progress on this task. You can
         <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">jump to it now</a>.
