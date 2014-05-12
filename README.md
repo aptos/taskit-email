@@ -16,7 +16,7 @@ English versions of each template are found in the en folder. Each additional la
   <h2>Welcome to <%= site_name %>!</h2>
 ````
 
-        In this case, only 'Welcome to' should be changed. However, if you would like to change the order of this greeting by placing the site_name before the welcome phrase, you may do that.
+  In this case, only 'Welcome to' should be changed. However, if you would like to change the order of this greeting by placing the site_name before the welcome phrase, you may do that.
 
 4. Once your edits are complete, click "Commit changes" at the bottom of the file.
 5. When you commit changes, you are welcome to add a comment below in the 'Commit changes' area, where some example text is shown.
