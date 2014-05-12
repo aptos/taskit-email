@@ -20,5 +20,5 @@ We are going to use the editor built in to github for our purposes. This is an o
 
   In this case, only 'Welcome to' should be changed. However, if you would like to change the order of this greeting by placing the site_name before the welcome phrase, you may do that.
 
-* Once your edits are complete, click "Commit changes" at the bottom of the file.
+* Once your edits are complete, click the green "Commit changes" button near the bottom of the file.
 * When you commit changes, you are welcome to add a comment below in the 'Commit changes' area, where some example text is shown.
