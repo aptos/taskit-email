@@ -22,3 +22,14 @@ We are going to use the editor built in to github for our purposes. This is an o
 
 * Once your edits are complete, click the green "Commit changes" button near the bottom of the file.
 * When you commit changes, you are welcome to add a comment below in the 'Commit changes' area, where some example text is shown.
+
+### Viewing your changes
+
+The github site doesn't have a simple way to show you how the HTML will look with one click, but there is a pretty simple solution:
+
+* First, click the button labelled 'Raw' to see just our html page.
+* Next, from the Chrome menu, save the file to your desktop: File -> Save Page As...
+* When you save remove the '.erb.txt' from the end of the file name, so that it ends in '.html'
+* Now you can just double click the file or drag it into your browser window.
+
+Don't worry about the stuff like "<%= @setting.name %>", this will be filled in with the user's name when the application runs.
