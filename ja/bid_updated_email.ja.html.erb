@@ -4,23 +4,23 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3><%= @bid.owner_name %> has updated the Bid for '<%= @bid.task_title %>'</h3>
+  <h3><%= @bid.owner_name %> さんは「<%= @bid.task_title %>」の入札内容を更新されました。</h3>
   <p>
-    Hi <b><%= @bid.task_owner_name %></b>
+    <b><%= @bid.task_owner_name %></b>さま、
   </p>
   <p>
-    <%= @bid.owner_name %> has updated the bid on your task.
-    Please take some time to <a href="<%= notifications_url %>/#/bids/<%= @bid.id %>">Review your bid now</a>. You can accept the bid straight away, or use the 'Comments' area to ask a question.
+    <%= @bid.owner_name %>さんがあなたのタスクのための入札を更新されました。
+    入札内容を<a href="<%= notifications_url %>/#/bids/<%= @bid.id %>">ご確認ください。</a>. 入札を直ちに受け入れるか、「コメント」欄を使って質問をすることができます。
   </p>
   <p>
-    You can check out <a href="<%= notifications_url %>/#/profile/<%= @bid.owner %>"><%= @bid.owner_name %>'s Profile</a> for ratings, reviews, common contacts and other information.
+    入札者の評価、共通のコンタクトや他の情報を<a href="<%= notifications_url %>/#/profile/<%= @bid.owner %>"><%= @bid.owner_name %>入札者プロフィールのページで</a>確認することができます。
   </p>
   <p>
-    Your feedback is always welcome.
-    <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time.
+    ご質問等ございましたら、
+    <a href="mailto:<%= @feedback_mailto %>">お客様サポートセンターまで</a>お気軽にご連絡ください。
   </p>
   <p>
-    Sincerely,
+    弊社サービスをご利用いただき誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
