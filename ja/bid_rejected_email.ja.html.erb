@@ -4,17 +4,16 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3>Your Bid for '<%= @bid.task_title %>' was not accepted.</h3>
+  <h3>残念ながら、あなたの'<%= @bid.task_title %>'への入札は拒否されました。</h3>
   <p>
-    <p><b><%= @setting.name %></b>, We're sorry but another bid has been accepted by <%= @bid.task_owner_name %></p>
+    <p><b><%= @setting.name %></b>さま、プロジェクトオーナーの<%= @bid.task_owner_name %>さんは、他の入札を選ばれました。</p>
     <p>
-      There are plenty of other projects ready for bid on <%= site_name %>, so  <a href="<%= notifications_url %>/#/tasks/search">Search for a Project now</a>. Good Luck!
-
+      There are plenty of other projects ready for bid on <%= site_name %>のサイトにある他のプロジェクトをご覧になり、<a href="<%= notifications_url %>/#/tasks/search">再度ご検索をれることをお勧めします。</a>. グッドラック！
       <p>
        Your feedback is always welcome.
        <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time.
        <p>
-        Sincerely,
+        弊社サービスをご利用いただき、誠にありがとうございました。
       </p>
       <p>
         <em><%= site_signature %></em>
