@@ -36,16 +36,16 @@ The github site doesn't have a simple way to show you how the HTML will look wit
 
 #### Use the GitHub HTMLPreview Bookmarklet tool
 
-Alternately to saving the file to your desktop, you can add this 'bookmarklet' to your bookmarks bar and preview the page right from github. A bookmarklet is a tiny javascript program that runs against the current page. Here's how to install it:
+Alternately to saving the file to your desktop, you can add this 'bookmarklet' to your bookmarks bar and preview the page right from github. A bookmarklet is a tiny javascript program that runs against the current page. So we'll create a bookmark, and instead of adding a normal URL, we'll paste in some javascript. Here's how to install it:
 
 * Open the Bookmark Manager in Chrome. Bookmarks -> Bookmark Manager
 * Click Bookmarks Bar
 * RightClick under the list of bookmarks and 'Add Page...'
 * Name: HTMLPreview
 * URL:
-''''
+````
  javascript:void(%27http://htmlpreview.github.io/%27%3D%3Dwindow.location%3Falert(%27Drag%20me%20to%20your%20bookmarks%20bar!%27):window.location%3D%27http://htmlpreview.github.io/%3F%27%2Bwindow.location)
-''''
+````
 
 To Preview the email, navigate to the template in Github and click 'Raw' in the github viewer menu. You'll see just the template contents. Then click your new 'HTMLPreview' bookmarklet. You should see the page re-rendered as a normal webpage.
 
