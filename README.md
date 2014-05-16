@@ -25,14 +25,8 @@ We are going to use the editor built in to github for our purposes. This is an o
 
 ### Viewing your changes
 
-The github site doesn't have a simple way to show you how the HTML will look with one click, but there is a pretty simple solution:
+The github site doesn't have a simple way to show you how the HTML will look with one click, but there are two solutions that are pretty simple:
 
-#### Save the file to your Desktop as '.html'
-
-* First, click the button labeled 'Raw' to see just our html page.
-* Next, from the Chrome menu, save the file to your desktop: File -> Save Page As...
-* When you save, remove the '.erb.txt' from the end of the file name, so that it ends in '.html'
-* Now you can double click the file or drag it into your browser window.
 
 #### Use the GitHub HTMLPreview Bookmarklet tool
 
@@ -50,3 +44,14 @@ Alternately to saving the file to your desktop, you can add this 'bookmarklet' t
 To Preview the email, navigate to the template in Github and click 'Raw' in the github viewer menu. You'll see just the template contents. Then click your new 'HTMLPreview' bookmarklet. You should see the page re-rendered as a normal webpage.
 
 Don't worry about the stuff like "<%= @setting.name %>", this will be filled when the application runs. In this case, the user's name will be substituted.
+
+#### Save the file to your Desktop as '.html', then open them in your browser
+
+* First, click the button labeled 'Raw' to see just our html page.
+* Next, from the Chrome menu, save the file to your desktop: File -> Save Page As...
+* When you save, remove the '.erb.txt' from the end of the file name, so that it ends in '.html'
+* Now you can double click the file or drag it into your browser window.
+
+Don't worry about the stuff like "<%= @setting.name %>", this will be filled when the application runs. In this case, the user's name will be substituted.
+
+** It's possible that windows users will still see the markup. If this is the case, try the 'bookmarklet' approach**
