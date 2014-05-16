@@ -27,9 +27,23 @@ We are going to use the editor built in to github for our purposes. This is an o
 
 The github site doesn't have a simple way to show you how the HTML will look with one click, but there is a pretty simple solution:
 
-* First, click the button labelled 'Raw' to see just our html page.
+#### Save the file to your Desktop as '.html'
+
+* First, click the button labeled 'Raw' to see just our html page.
 * Next, from the Chrome menu, save the file to your desktop: File -> Save Page As...
 * When you save, remove the '.erb.txt' from the end of the file name, so that it ends in '.html'
 * Now you can double click the file or drag it into your browser window.
 
-Don't worry about the stuff like "<%= @setting.name %>", this will be filled in with the user's name when the application runs.
+#### Use the GitHub HTMLPreview Bookmarklet tool
+
+Alternately to saving the file to your desktop, you can add this 'bookmarklet' to your bookmarks bar and preview the page right from github. A bookmarklet is a tiny javascript program that runs against the current page. Here's how to install it:
+
+* Open the Bookmark Manager in Chrome. Bookmarks -> Bookmark Manager
+* Click Bookmarks Bar
+* RightClick under the list of bookmarks and 'Add Page...'
+* Name: HTMLPreview
+* URL: javascript:void(%27http://htmlpreview.github.io/%27%3D%3Dwindow.location%3Falert(%27Drag%20me%20to%20your%20bookmarks%20bar!%27):window.location%3D%27http://htmlpreview.github.io/%3F%27%2Bwindow.location)
+
+To Preview the email, navigate to the template in Github and click 'Raw' in the github viewer menu. You'll see just the template contents. Then click your new 'HTMLPreview' bookmarklet. You should see the page re-rendered as a normal webpage.
+
+Don't worry about the stuff like "<%= @setting.name %>", this will be filled when the application runs. In this case, the user's name will be substituted.
