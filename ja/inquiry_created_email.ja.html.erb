@@ -4,23 +4,23 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3><%= @bid.owner_name %> has posted an Inquiry for '<%= @bid.task_title %>'</h3>
+  <h3><%= @bid.owner_name %>さんが「<%= @bid.task_title %>」についての質問を投稿しました。</h3>
   <p>
-    Hi <b><%= @bid.task_owner_name %></b>
+    <b><%= @bid.task_owner_name %>さま、</b>
   </p>
   <p>
-    <%= @bid.owner_name %> is considering bidding for this Project and has sent an inquiry.
-    Please take some time to <a href="<%= notifications_url %>/#/bids/<%= @bid.id %>"><b>review the inquiry now</b></a>. You may answer any questions in the Questions & Comments section on this Inquiry. If you would prefer to provide answers for all viewers to see, we suggest you put that information into the Description or Comments sections of the Project, <a href="<%= notifications_url %>/#/tasks/<%= @bid.task_id %>" ><%= @bid.task_title %></a>
+    <%= @bid.owner_name %>さんはこのプロジェクトに入札するにあたり、質問を投稿されました。
+    質問を見るにはここを<a href="<%= notifications_url %>/#/bids/<%= @bid.id %>"><b>クリックしてください。</b></a> 「質問とコメント」の欄に記載されているどの質問にでも返答することができます。もし返答の内容を一般公開されることを希望される場合は、その内容をプロジェクトの内容事項またはコメントの部分に投稿されることをお勧めします。<a href="<%= notifications_url %>/#/tasks/<%= @bid.task_id %>" ><%= @bid.task_title %></a>
   </p>
   <p>
-    You may also want to check out <a href="<%= notifications_url %>/#/profile/<%= @bid.owner %>"><%= @bid.owner_name %>'s Profile</a> for ratings, reviews, common contacts and other information.
+    またここをクリックして<a href="<%= notifications_url %>/#/profile/<%= @bid.owner %>">入札者<%= @bid.owner_name %>さんの評価、共通のコンタクトや他の情報などをプロフィールページにてご覧になることがでくます。</a>
   </p>
   <p>
-    Your feedback is always welcome.
-    <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time.
+    ご質問等ございましたら、お客様サポートセンターまで
+    <a href="mailto:<%= @feedback_mailto %>">お気軽に</a>ご連絡ください。
   </p>
   <p>
-    Sincerely,
+    弊社サービスをご利用いただき誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
