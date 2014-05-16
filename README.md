@@ -30,7 +30,7 @@ The github site doesn't have a simple way to show you how the HTML will look wit
 
 #### Use the GitHub HTMLPreview Bookmarklet tool
 
-Alternately to saving the file to your desktop, you can add this 'bookmarklet' to your bookmarks bar and preview the page right from github. A bookmarklet is a tiny javascript program that runs against the current page. So we'll create a bookmark, and instead of adding a normal URL, we'll paste in some javascript. Here's how to install it:
+The quickest way to get a preview is to add a 'bookmarklet' to your bookmarks bar and preview the page right from github. A bookmarklet is a tiny javascript program that runs against the current page. So we'll create a bookmark, and instead of adding a normal URL, we'll paste in some javascript. Here's how to install it:
 
 * Open the Bookmark Manager in Chrome. Bookmarks -> Bookmark Manager
 * Click Bookmarks Bar
