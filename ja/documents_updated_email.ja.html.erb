@@ -4,27 +4,27 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3>Documents have been updated on your work order '<%= @work_order.task_title %>'</h3>
+  <h3>あなたのワークオーダー「<%= @work_order.task_title %>」のドキュメントが更新されました。</h3>
   <p>
     <% if @changes %>
-    We wanted to let you know that the following documents attached to this work order have been updated:
+    このワークオーダーに関連付けされた次のドキュメントが更新されたことをお知らせします。
     <ul>
       <% @changes.each do |doc| %>
       <li><%= doc %></li>
       <% end %>
     </ul>
     <% else %>
-    We wanted to let you know that one or more documents attached to this work order have been updated or removed.
+    このワークオーダーに関連付けされたドキュメントが更新または削除されたことをお知らせします。
     <% end %>
   </p>
-  Jump to the work order now - <br>
+  ワークオーダーに今すぐアクセスする。<br>
   <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3></a>
   <p>
-    Your feedback is always welcome.
-    <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
+    ご質問等ございましたら、お客様サポートセンターまで
+    <a href="mailto:<%= @feedback_mailto %>">お気軽に</a>ご連絡ください。
   </p>
   <p>
-    Sincerely,
+    弊社サービスをご利用いただき誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
