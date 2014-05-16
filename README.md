@@ -35,11 +35,14 @@ The quickest way to get a preview is to add a 'bookmarklet' to your bookmarks ba
 * Open the Bookmark Manager in Chrome. Bookmarks -> Bookmark Manager
 * Click Bookmarks Bar
 * RightClick under the list of bookmarks and 'Add Page...'
-* Name: HTMLPreview
-* URL:
+
+    Name: HTMLPreview
+
+    URL:
 ````
  javascript:void(%27http://htmlpreview.github.io/%27%3D%3Dwindow.location%3Falert(%27Drag%20me%20to%20your%20bookmarks%20bar!%27):window.location%3D%27http://htmlpreview.github.io/%3F%27%2Bwindow.location)
 ````
+(paste that blob into the URL box)
 
 To Preview the email, navigate to the template in Github and click 'Raw' in the github viewer menu. You'll see just the template contents. Then click your new 'HTMLPreview' bookmarklet. You should see the page re-rendered as a normal webpage.
 
