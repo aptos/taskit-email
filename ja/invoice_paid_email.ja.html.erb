@@ -9,7 +9,7 @@
     <b><%= @work_order.task_owner_name %>さま、</b>
   </p>
   <p>
-    <br><a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><%= @work_order.task_title %>のワークオーダーへの支払いが行われたことをお知らせします。</a>
+    <br>この<a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><%= @work_order.task_title %>ワークオーダー</a>への支払いが行われたことをお知らせします。
   </p>
   <p>
     現時点をもって、あなたのワークオーダーが終了しました。<b><%= @work_order.bid_owner_name %></b>さんがお客様のご希望に沿うことの出来る作業をされことをご確認ください。このコンサルタントへの評価やコメントなども投稿されることをお勧めいたします。
