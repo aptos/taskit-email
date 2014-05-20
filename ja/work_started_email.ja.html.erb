@@ -4,31 +4,29 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-    <h3>Work has started on '<%= @work_order.task_title %>'</h3>
+    <h3>「<%= @work_order.task_title %>」の仕事が開始されました。</h3>
     <p>
-        A Work Order has been created to track progress on this task. You can
-        <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">jump to it now</a>.
+        このタスクの進行状況を記録するためにワークオーダーが作成されました。ここをクリックして<a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">ワークオーダーにアクセスすることが</a>.
     </p>
     <p>
-        At this stage, the next steps are:
+        下記のステップを参考にして作業を進めてください。
         <ul>
             <li>
-                Check the estimated completion date on the work order.
+                ワークオーダーの作業完了予定日を確認する。
             </li>
             <li>
-                Get in touch with <b><%= @work_order.bid_owner_name %></b> directly via the contact information on the work order.
+                ワークオーダーの連絡情報を参照のうえ<b><%= @work_order.bid_owner_name %>さんに</b>コンタクトをとり、作業内容を確認する。
             </li>
             <li>
-                Hop back on <%= site_name %> and <a href="<%= notifications_url %>/#/tasks/new">Create your next Project</a>
+                <%= site_name %>で新しいプロジェクトを作成するには、<a href="<%= notifications_url %>/#/tasks/new">新しいプロジェクトを作成する</a>をクリックしてください。
             </li>
         </ul>
     </p>
     <p>
-        Your feedback is always welcome.
-        <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
+        ご意見などございましたら、弊社お客様サポートセンターまで<a href="mailto:<%= @feedback_mailto %>">お気軽に</a>ご連絡ください。
     </p>
    <p>
-    Sincerely,
+    当社サービスをご利用いただき、誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
