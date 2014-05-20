@@ -4,22 +4,22 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3><%= @bid.owner_name %> has Bid on '<%= @bid.task_title %>'</h3>
+  <h3><%= @bid.owner_name %>さんが「<%= @bid.task_title %>」に入札しました。</h3>
   <p>
-    Hi <b><%= @bid.task_owner_name %></b>
+    <b><%= @bid.task_owner_name %>さま、</b>
   </p>
   <p>
-    <%= @bid.owner_name %>さんがあなたのタスクに入札しました。
-    あなたの入札を<a href="<%= notifications_url %>/#/bids/<%= @bid.id %>">確認してください。</a>. 入札額を直ちに受け入れるか、「コメント」の欄を使って質問をすることが出来ます。
+    <%= @bid.owner_name %>さんがあなたのタスクに入札をしました。
+    入札を<a href="<%= notifications_url %>/#/bids/<%= @bid.id %>">で確認してください。</a>入札額を直ちに受け入れるか、「コメント」の欄を使って質問をすることも出来ます。
   </p>
   <p>
-    また、入札者の評価、共通のコンタクトや、その他の情報を<a href="<%= notifications_url %>/#/profile/<%= @bid.owner %>"><%= @bid.owner_name %>'s Profile</a>入札者のプロフィールページで確認することができます。
+    また、入札者の評価、共通のコンタクトや、その他の情報などを入札者のプロフィールページ<a href="<%= notifications_url %>/#/profile/<%= @bid.owner %>"><%= @bid.owner_name %>'s Profile</a>で確認することができます。
   </p>
   <p>
-    ご質問等ございましたら、お気軽にお客様サポートセンターまで<a href="mailto:<%= @feedback_mailto %>">ご連絡</a>ください。
+    ご質問等ございましたら、弊社お客様サポートセンターまで<a href="mailto:<%= @feedback_mailto %>">お気軽に</a>ご連絡ください。
   </p>
   <p>
-     弊社サービスをご利用いただき、誠にありがとうございました。
+     当社サービスをご利用いただき、誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
