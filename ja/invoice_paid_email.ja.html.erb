@@ -4,7 +4,7 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3>Payment has been received for invoice '<%= @invoice.id %>'</h3>
+  <h3>「<%= @invoice.id %>」の請求書への支払いが行われました。</h3>
   <p>
     <b><%= @work_order.task_owner_name %>さま、</b>
   </p>
@@ -12,17 +12,16 @@
     <br><a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><%= @work_order.task_title %>のワークオーダーへの支払いが行われたことをお知らせします。</a>
   </p>
   <p>
-    現時点をもって、あなたのワークオーダーが終了しました。<b><%= @work_order.bid_owner_name %></b>さんがお客様のご希望に沿うことの出来る作業をされことをご確認ください。このコンサルタントさんへの評価やコメントなども投稿されることをお勧めいたします。
+    現時点をもって、あなたのワークオーダーが終了しました。<b><%= @work_order.bid_owner_name %></b>さんがお客様のご希望に沿うことの出来る作業をされことをご確認ください。このコンサルタントへの評価やコメントなども投稿されることをお勧めいたします。
   </p>
   <p>
-    新しいプロジェクトを始められる準備ができましたら、<%= site_name %>をクリックして<a href="<%= notifications_url %>/#/tasks/create">あなたの次のプロジェクトを投稿してください。</a>
+    <%= site_name %>で新しいプロジェクトを始められる準備ができましたら、<a href="<%= notifications_url %>/#/tasks/create">ここをクリックして</a>あなたの次のプロジェクトを投稿してください。
   </p>
   <p>
-    ご質問等ございましたら、お客様サポートセンターまで
-    <a href="mailto:<%= @feedback_mailto %>">お気軽に</a>ご連絡ください。
+    ご質問等ございましたら、弊社お客様サポートセンターまでお気軽に<a href="mailto:<%= @feedback_mailto %>">ご連絡ください。</a>
   </p>
   <p>
-    弊社サービスをご利用いただき誠にありがとうございました。
+    当社サービスをご利用いただき、誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
