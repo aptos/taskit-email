@@ -4,36 +4,30 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-    <h3>Work has been completed on '<%= @work_order.task_title %>'</h3>
+    <h3>「<%= @work_order.task_title %>」の仕事が完了しました。</h3>
     <p>
-        A Work Order has been created to track progress on this task. You can
-        <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">jump to it now</a>.
+        この作業の進行状況を記録するためにワークオーダーが作成されました。ここをクリックして<a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">ワークオーダーにアクセスすることができます。</a>
     </p>
     <p>
-        At this stage, your next steps should be:
+        以降の手順に従ってプロセスを完了してください。
         <ul>
           <li>
-            Accept the work by clicking on the 'work accepted' tick-box on your work order.
+            あなたのワークオーダーの「仕事を受け入れる」のボックスにチェックマークをいれる。
         </li>
         <li>
-            Rate and Review the work done by <b><%= @work_order.bid_owner_name %></b>.
+            <b><%= @work_order.bid_owner_name %></b>さんの仕事の評価をする。
         </li>
         <li>
-            Proceed with payment. To do this, open your work order and click 'Pay'.
-            You can choose to pay immediately via credit card or we can send you an invoice
-            which you can pay via electronic transfer of funds directly to TaskIT.
-            We'll let <b><%= @work_order.bid_owner_name %></b> know that payments are
-            being process once you've made your selection.
+            ワークオーダーから「支払いをする」をクリックして支払いを開始する。
+            クレジットカードのを利用して直接支払いをするか、請求書の送信をリクエストすることにより、TaskITを通して電子振込をすることもできます。コンサルタントの<b><%= @work_order.bid_owner_name %></b>さんには、支払いのプロセスが開始された旨の通知メールが送信されます。
         </ul>
     </p>
-    Here's that link to your work order again: <br>
-    <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3></a>
+    あなたのワークオーダーにアクセスするには<br>
+    <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3>ここをクリックしてください。</a>
     <p>
-        Your feedback is always welcome.
-        <a href="mailto:<%= @feedback_mailto %>">Drop us a line</a> any time!
-    </p>
+        ご意見などございましたら、弊社お客様サポートセンターまで<a href="mailto:<%= @feedback_mailto %>">お気軽に</a>ご連絡ください。</p>
     <p>
-    Sincerely,
+    当社サービスをご利用いただき、誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
