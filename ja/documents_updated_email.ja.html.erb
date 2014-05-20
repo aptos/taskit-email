@@ -4,7 +4,7 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3>あなたのワークオーダー「<%= @work_order.task_title %>」のドキュメントが更新されました。</h3>
+  <h3>「<%= @work_order.task_title %>」のワークオーダーに関連付けされたドキュメントが更新されました。</h3>
   <p>
     <% if @changes %>
     このワークオーダーに関連付けされた次のドキュメントが更新されたことをお知らせします。
@@ -17,14 +17,14 @@
     このワークオーダーに関連付けされたドキュメントが更新または削除されたことをお知らせします。
     <% end %>
   </p>
-  ワークオーダーに今すぐアクセスする。<br>
-  <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3></a>
+  <br>
+  <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3>ここをクリックして</a>このワークオーダーにアクセスしてください。
   <p>
-    ご質問等ございましたら、お客様サポートセンターまで
-    <a href="mailto:<%= @feedback_mailto %>">お気軽に</a>ご連絡ください。
+    ご質問等ございましたら、弊社お客様サポートセンターまでお気軽に
+    <a href="mailto:<%= @feedback_mailto %>">ご連絡ください。</a>
   </p>
   <p>
-    弊社サービスをご利用いただき誠にありがとうございました。
+    当社サービスをご利用いただき、誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
