@@ -4,10 +4,10 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3>Update from <%= site_name  %></h3>
+  <h3><%= site_name  %>のサイト更新のお知らせ</h3>
   <p>
     <b><%= @message['to_name'] %></b>さま、<p />
-    あなたのコンタクトの<b><%= @message['author_name'] %></b>さんが<a href="<%= @link %>"><%= @message['title'] %></a>に下記のメッセージを残されました。
+    あなたのコンタクトの<b><%= @message['author_name'] %></b>さんが<a href="<%= @link %>"><%= @message['title'] %></a>のメッセージを書き込みました。
   </p>
 
   <br />
@@ -16,14 +16,13 @@
   </p>
   <hr>
   <p>
-    このメールに直接返信されるか、そのサイトに<a href="<%= @link %>"><%= @message['title'] %></a>アクセスされて「質問とコメント」の欄に返答メッセージを書き込むこともできます。あなたの返答は<%= @message['author_name'] %>さんに直ちに送信されます。
+    このメールに直接返信されるか、サイトの<a href="<%= @link %>"><%= @message['title'] %></a>にアクセスされて「質問とコメント」の欄に返答メッセージを書き込むこともできます。あなたの返答は<%= @message['author_name'] %>さんに直ちに送信されます。
   </p>
   <p>
-   ご質問等ございましたら、
-   <a href="mailto:<%= @feedback_mailto %>">お客様サポートセンターまでお気軽に</a>ご連絡ください。
+   ご質問等ございましたら、弊社お客様サポートセンターまでお気軽に<a href="mailto:<%= @feedback_mailto %>">ご連絡ください。</a>
   </p>
   <p>
-    弊社サービスをご利用いただき誠にありがとうございました。
+    当社サービスをご利用いただき誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
