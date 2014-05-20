@@ -4,15 +4,15 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3>残念ながら、あなたの'<%= @bid.task_title %>'への入札は拒否されました。</h3>
+  <h3>残念ながら、あなたの「<%= @bid.task_title %>」への入札は拒否されました。</h3>
   <p>
-    <p><b><%= @setting.name %></b>さま、プロジェクトオーナーの<%= @bid.task_owner_name %>さんは、他の入札を選ばれました。</p>
+    <p><b><%= @setting.name %></b>さま、プロジェクトオーナーの<%= @bid.task_owner_name %>さんは、他の入札者を選ばれました。</p>
     <p>
       <%= site_name %>のサイトにある他のプロジェクトをご覧になり、<a href="<%= notifications_url %>/#/tasks/search">再度ご検索をれることをお勧めします。</a>. グッドラック！
       <p>
-       ご質問等ございましたら、<a href="mailto:<%= @feedback_mailto %>">お客様サポートセンターまでお気軽に</a>ご連絡ください。
+       ご質問等ございましたら、弊社お客様サポートセンターまでお気軽に<a href="mailto:<%= @feedback_mailto %>">ご連絡ください。</a>
        <p>
-        弊社サービスをご利用いただき、誠にありがとうございました。
+        当社サービスをご利用いただき、誠にありがとうございました。
       </p>
       <p>
         <em><%= site_signature %></em>
