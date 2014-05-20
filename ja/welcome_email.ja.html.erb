@@ -6,30 +6,28 @@
 <body>
   <h2>Welcome to <%= site_name %>!</h2>
   <p>
-    こんにちは <b><%= @user.name %></b>,
+    <b><%= @user.name %>さま</b>,
   </p>
   <p>
-    Thanks for joining Juniper's Professional Services Marketplace. This is the best place to find and engage qualified and certified Juniper Professional Services Specialists.
+    ジュニパー・プロフェッショナル・サービスのマーケットプレイスにご参加いただき、ありがとうございました。このマーケットプレイスでは、有能な認定されたジュニパー・プロフェッショナル・サービス・スペシャリスト（コンサルタント）を見つけることができます。</p>
+  <p>
+    ここに参加しているエリート・コンサルタントはすべて、その多くの経験を通してジュニパー・ネットワークの製品やソリューションを提供することができ、またそれぞれの正式な資格取得を得ています。</p>
+  <p>
+    お客様のニーズに合ったサービスをご提供できるよう、コンサルタントは常にオンラインでスタンバイしています。このマーケットプレイスを通して、お客様のユニークなニーズに合ったコンサルタントを探し出すことができます。
   </p>
   <p>
-    These elite solution providers have extensive experience implementing Juniper Networks products and solutions, and have gone through a formal qualification and vetting process.
-  </p>
-  <p>
-    Professional Services Specialists are online and eager to support your needs, and the marketplace makes it very easy to engage with the providers of your choice based on your unique requirements and circumstances.
-  </p>
-  <p>
-    Here are a few tips to help you get started:
+    下記のヒントを参考にして、コンサルタント探しを始めてみましょう。
   </p>
   <ul>
-    <li>If you are looking for a Professional Services Specialist, you can start by <a href="<%= notifications_url %>/#/companies">Browsing our Provider Directory</a></li>
-    <li>If you have a project ready to share with your Preferred Providers, simply <a href="<%= notifications_url %>/#/tasks/new">Create a new Project</a></li>
-    <li>If you're an authorized Professional Services Specialist, you can also <a href="<%= notifications_url %>/#/tasks/search">Search for Projects</a> to find new customers and opportunities today</li>
+    <li>ここをクリックして<a href="<%= notifications_url %>/#/companies">コンサルタントのリストを見ることができます。</a></li>
+    <li>お客様のプロジェクトをお気に入りのコンサルタントと共有するには<a href="<%= notifications_url %>/#/tasks/new">新しいプロジェクトを作成する</a>をクリックしてください。</li>
+    <li>もしあなたが正式なプロフェッショナル・サービス・スペシャリスト（コンサルタント）である場合は、<a href="<%= notifications_url %>/#/tasks/search">プロジェクトを探す</a>をクリックして、新しいクライアントを探してください。</li>
   </ul>
   <p>
-    We love to hear from our user community, so please feel free to <a href="mailto:<%= feedback_mailto %>">drop us a line any time!</a>
+    ご意見などございましたら、弊社お客様サポートセンターまで<a href="mailto:<%= feedback_mailto %>">お気軽にご連絡ください。</a>
   </p>
   <p>
-    Sincerely,
+    当社サービスをご利用いただき、誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
