@@ -6,7 +6,7 @@
 <body>
     <h3>「<%= @work_order.task_title %>」の仕事が完了しました。</h3>
     <p>
-        この作業の進行状況を記録するためにワークオーダーが作成されました。ここをクリックして<a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">ワークオーダーにアクセスすることができます。</a>
+        この作業の進行状況を記録するためのワークオーダーが作成されました。<a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>">ここをクリックして</a>ワークオーダーにアクセスすることができます。
     </p>
     <p>
         以降の手順に従ってプロセスを完了してください。
@@ -25,9 +25,9 @@
     あなたのワークオーダーにアクセスするには<br>
     <a href="<%= notifications_url %>/#/work_orders/<%= @work_order._id %>"><h3><%= @work_order.task_title %></h3>ここをクリックしてください。</a>
     <p>
-        ご意見などございましたら、弊社お客様サポートセンターまで<a href="mailto:<%= @feedback_mailto %>">お気軽に</a>ご連絡ください。</p>
+        ご意見などございましたら、お客様サポートセンターまでお気軽に<a href="mailto:<%= @feedback_mailto %>">ご連絡ください。</a></p>
     <p>
-    当社サービスをご利用いただき、誠にありがとうございました。
+    弊社サービスをご利用いただき、誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
