@@ -4,22 +4,22 @@
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 </head>
 <body>
-  <h3><%= @bid.task_owner_name %>さんが「<%= @bid.task_title %>」のタスクを更新しました。</h3>
+  <h3><%= @bid.task_owner_name %>さんが「<%= @bid.task_title %>」のタスク内容を更新しました。</h3>
   <p>
     <b><%= @bid.owner_name %>さま、</b>
   </p>
   <p>
-    <%= @bid.task_owner_name %>さんが、あなたの<%= site_name %>でのプロジェクトを更新しました。このプロジェクトを<a href="<%= notifications_url %>/#/tasks/<%= @bid.task_id %>">確認されることをお勧めします。</a>もし、変更についての質問やコメントなどがある場合は、プロジェクトの「質問とコメント」の欄に投稿することができます。投稿アラートがプロジェクトオーナーに送信されます。
+    <%= @bid.task_owner_name %>さんが、あなたの<%= site_name %>でのタスク内容を更新しました。<a href="<%= notifications_url %>/#/tasks/<%= @bid.task_id %>">ここをクリック</a>して変更の詳細などを確認してください。もし、変更についての質問やコメントなどがある場合は、プロジェクトの「質問とコメント」の欄に投稿することができます。投稿アラートがプロジェクトオーナーに送信されます。
   </p>
   <p>
     下記のリンクをクリックしてプロジェクトにアクセスしてください。
     <b><a href="<%= notifications_url %>/#/tasks/<%= @bid.task_id %>"><%= @bid.task_title %></a></b>
   </p>
   <p>
-    ご質問等ございましたら、弊社お客様サポートセンターまで<a href="mailto:<%= @feedback_mailto %>">お気軽に</a>ご連絡ください。
+    ご質問等ございましたら、お客様サポートセンターまでお気軽に<a href="mailto:<%= @feedback_mailto %>">ご連絡ください。</a>
   </p>
   <p>
-    当社サービスをご利用いただき、誠にありがとうございました。
+    弊社サービスをご利用いただき、誠にありがとうございました。
   </p>
   <p>
     <em><%= site_signature %></em>
